@@ -103,4 +103,6 @@ public class Product {
     public void setProductImage(MultipartFile productImage) {
         this.productImage = productImage;
     }
-}
+
+
+    }
