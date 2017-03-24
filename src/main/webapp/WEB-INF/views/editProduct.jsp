@@ -9,7 +9,7 @@
             <p class="lead">Please Update Product Information here </p>
         </div>
 
-        <form:form action="${pageContext.request.contextPath}/admin/productInventory/editProduct" method="POST"
+        <form:form action="${pageContext.request.contextPath}/admin/product/editProduct" method="POST"
                    commandName="product" enctype="multipart/form-data">
 
         <form:hidden path="productId" value="${product.productId}" />

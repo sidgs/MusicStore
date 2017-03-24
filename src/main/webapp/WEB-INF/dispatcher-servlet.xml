@@ -13,7 +13,12 @@
     <!--<Context:component-scan base-package="com.emusicstore" />-->
     <!--<mvc:annotation-driven />-->
    <Context:component-scan base-package="com.emusicstore" />
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven>
+    <mvc:argument-resolvers>
+        <bean class="org.springframework.security.web.bind.support.AuthenticationPrincipalArgumentResolver"/>
+    </mvc:argument-resolvers>
+
+    </mvc:annotation-driven>
 
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 
