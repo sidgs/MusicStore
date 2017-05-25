@@ -58,6 +58,8 @@ public class CartResources {
                 cartItem.setQuantity(cartItem.getQuantity()+1);
                 cartItem.setTotalPrice(product.getProductPrice()*cartItem.getQuantity());
                 cartItemService.addCartItem(cartItem);
+
+                return;
             }
         }
 
@@ -68,6 +70,8 @@ public class CartResources {
         cartItem.setCart(cart);
 
         cartItemService.addCartItem(cartItem);
+
+
 
     }
 

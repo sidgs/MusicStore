@@ -11,7 +11,7 @@
         <property name="password" value="0504"/>
     </bean>
 
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <bean id="sessionFctory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
             <property name="dataSource" ref="dataSource"></property>
             <property name="hibernateProperties">
                 <props>
